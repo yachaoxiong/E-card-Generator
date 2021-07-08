@@ -61,11 +61,10 @@ const Home = () => {
         </div>
 
         <p style={{ textAlign: 'center', paddingBottom: '56px' }}>
-          Send an awesome E-Christmas card or E-birthday card to your friends.
+          Send an awesome E-card to your friends.
         </p>
 
         <form
-          style={{ zIndex: 9999 }}
           noValidate
           autoComplete='off'
           style={{ textAlign: 'center' }}
@@ -109,6 +108,7 @@ const Home = () => {
         </form>
       </div>
       <a
+        rel='noreferrer'
         target='_blank'
         href='https://ericxiong.herokuapp.com/'
         style={{

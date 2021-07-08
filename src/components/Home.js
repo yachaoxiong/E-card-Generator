@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
-
+import LOGO from '../images/logo.png';
 import {
   Button,
   TextField,
@@ -50,18 +50,19 @@ const Home = () => {
           transform: 'translate(-50% , -50%)',
         }}
       >
+        <div style={{ textAlign: 'center' }}>
+          <img alt='logo' src={LOGO} />
+        </div>
         <div
           style={{
-            fontSize: '2rem',
+            fontSize: '3rem',
             fontWeight: 'bold',
             textAlign: 'center',
           }}
-        >
-          E-Gife Card Generator
-        </div>
+        ></div>
 
         <p style={{ textAlign: 'center', paddingBottom: '56px' }}>
-          Send an awesome E-card to your friends.
+          An E-Card Generator. Send an awesome E-card to your friends.
         </p>
 
         <form
@@ -77,7 +78,7 @@ const Home = () => {
               setName(e.target.value);
             }}
             id='standard-basic'
-            label='Set up a name'
+            label='Name on the card'
           />
           <FormControl component='fieldset'>
             <RadioGroup

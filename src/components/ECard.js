@@ -24,9 +24,9 @@ const NewCard = () => {
   };
   const renderBg = () => {
     if (cardType === 'birthday') {
-      return <Bubble />;
-    } else {
       return <SnowBg />;
+    } else {
+      return <Bubble />;
     }
   };
 

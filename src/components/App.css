@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.card:hover {
+  background: transparentize('#171010', 0.9) !important;
+  box-shadow: rgb(255 255 255) 0px 12px 48px 3px;
+}
+.letterIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 86px;
+  height: auto;
+}
+.letterIcon:hover {
+  cursor: pointer;
+}
+.letterHint {
+  position: absolute;
+  color: rgb(248, 248, 248);
+  top: 5px;
+  right: 25px;
+  text-shadow: 1px 1px 4px #ececec;
+}
+.card {
+  transition: all ease 1s;
+  border: 10px dotted rgb(0, 0, 0);
+  background: transparentize('#fff', 0.9);
+  backdrop-filter: blur(50px);
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  margin: 0 40px;
+  padding: 20px 50px 50px 50px;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 18%) 0px 5px 20px 0px;
+}
+.Home {
+  background: #f6f6f6;
+}
+.App {
+  background-image: radial-gradient(
+      ellipse at top right,
+      #fb9300 40%,
+      rgba(0, 163, 203, 0) 40%
+    ),
+    radial-gradient(
+      ellipse at bottom left,
+      #f54748 30%,
+      rgba(0, 163, 203, 0) 30%
+    ),
+    linear-gradient(
+      to right,
+      rgba(98, 87, 147, 1) 0%,
+      rgba(98, 87, 147, 1) 33%,
+      rgba(213, 93, 100, 1) 33%,
+      rgba(213, 93, 100, 1) 66%,
+      #ffc947 66%
+    );
+  background-size: 50% 100%;
+}
+.bg-cover {
+  background: white;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+#particles-js {
+  height: 100vh;
+}
+#particles-js2 {
+  height: 100vh;
+}
+.card-title {
+  font-family: 'Great Vibes', cursive !important;
+  text-shadow: 0 0 1em transparentize('black', 0.5);
+}
+.card-username {
+  font-size: 3.6rem !important;
+  color: #284e78;
+  padding-left: 10%;
+}

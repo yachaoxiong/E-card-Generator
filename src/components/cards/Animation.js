@@ -36,7 +36,7 @@ const Animation = ({ cardSetting, name }) => {
   return (
     <div
       style={{
-        width: 600,
+        maxWidth: 580,
         height: 'auto',
         top: '50%',
         left: '50%',
@@ -47,32 +47,22 @@ const Animation = ({ cardSetting, name }) => {
       }}
     >
       <div className='card'>
-        <div>
-          <h1
-            className='card-title'
-            style={{
-              fontSize: '3.3rem',
-            }}
-          >
-            Hi,
-          </h1>
-          <div className='letterIcon' onClick={() => window.location.reload()}>
-            {res.View}
-          </div>
-          {/* <div className='letterHint'>OPEN ME</div> */}
-          <div className='card-username'>{name}</div>
-          <h1
-            className='card-title'
-            style={{
-              paddingBottom: '10px',
-              textAlign: 'center',
-              fontSize: '3.3rem',
-            }}
-          >
-            {config.title}
-          </h1>
-          {View}
+        <h1 className='card-title'>Hi,</h1>
+        <div className='letterIcon' onClick={() => window.location.reload()}>
+          {res.View}
         </div>
+
+        <div className='card-username'>{name}</div>
+        <h1
+          className='card-title'
+          style={{
+            textAlign: 'center',
+            fontSize: '3rem',
+          }}
+        >
+          {config.title}
+        </h1>
+        <div style={{ maxWidth: 300, textAlign: 'cente' }}>{View}</div>
       </div>
     </div>
   );

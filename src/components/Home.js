@@ -26,7 +26,7 @@ const Home = () => {
   const history = useHistory();
   const classes = useStyles();
   const [name, setName] = useState('');
-  const [cardType, setCardType] = useState('birthday');
+  const [cardType, setCardType] = useState('christmas');
   const onSubmit = (e) => {
     e.preventDefault();
     history.push(`/ecard?name=${name}&&cardType=${cardType}`);

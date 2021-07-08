@@ -13,7 +13,7 @@ const Animation = ({ cardSetting, name }) => {
         animationData: HappyBd,
         title: 'Happy Birthday',
       });
-    } else if (cardSetting === 'christmas') {
+    } else {
       setConfig({
         animationData: webAnitmation,
         title: 'Merry Christmas',

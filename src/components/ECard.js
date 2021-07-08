@@ -22,14 +22,15 @@ const NewCard = () => {
       return <Animation cardSetting={cardType} name={name} />;
     }
   };
-  // const renderBg = () => {
-  //   if (cardType !== 'birthday') return <SnowBg />;
-  //   return <Bubble />;
-  // };
+  const renderBg = () => {
+    if (cardType === 'birthday') return <Bubble />;
+    return <SnowBg />;
+  };
 
   useEffect(() => {
     setName(currentName);
     setCardType(currentType);
+
     setPlayAnimation(true);
     let timer1 = setTimeout(() => setPlayAnimation(false), 1250);
     return () => {
@@ -40,8 +41,7 @@ const NewCard = () => {
   return (
     <div className='App' style={{ height: '100vh' }}>
       {renderCard()}
-      {cardType === 'birthday' ? <Bubble /> : null}
-      {cardType === 'christmas' ? <SnowBg /> : null}
+      {renderBg()}
     </div>
   );
 };

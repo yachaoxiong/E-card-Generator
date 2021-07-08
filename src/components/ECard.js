@@ -23,9 +23,17 @@ const NewCard = () => {
     }
   };
   const renderBg = () => {
-    if (cardType !== 'birthday') return <SnowBg />;
+    switch (cardType) {
+      case 'birthday':
+        return <Bubble />;
+      case 'christmas':
+        return <SnowBg />;
+      default:
+        return;
+    }
+    // if (cardType !== 'birthday') return <SnowBg />;
 
-    return <Bubble />;
+    // return <Bubble />;
   };
 
   useEffect(() => {

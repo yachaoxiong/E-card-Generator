@@ -22,19 +22,10 @@ const NewCard = () => {
       return <Animation cardSetting={cardType} name={name} />;
     }
   };
-  const renderBg = () => {
-    switch (cardType) {
-      case 'birthday':
-        return <Bubble />;
-      case 'christmas':
-        return <SnowBg />;
-      default:
-        return;
-    }
-    // if (cardType !== 'birthday') return <SnowBg />;
-
-    // return <Bubble />;
-  };
+  // const renderBg = () => {
+  //   if (cardType !== 'birthday') return <SnowBg />;
+  //   return <Bubble />;
+  // };
 
   useEffect(() => {
     setName(currentName);
@@ -49,7 +40,8 @@ const NewCard = () => {
   return (
     <div className='App' style={{ height: '100vh' }}>
       {renderCard()}
-      {renderBg()}
+      {cardType === 'birthday' ? <Bubble /> : null}
+      {cardType === 'christmas' ? <SnowBg /> : null}
     </div>
   );
 };

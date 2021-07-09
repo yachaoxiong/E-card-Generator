@@ -47,21 +47,13 @@ const Animation = ({ cardSetting, name }) => {
       }}
     >
       <div className='card'>
-        <h1 className='card-title'>Hi,</h1>
+        <div className='card-title'>Hi,</div>
         <div className='letterIcon' onClick={() => window.location.reload()}>
           {res.View}
         </div>
 
         <div className='card-username'>{name}</div>
-        <h1
-          className='card-title'
-          style={{
-            textAlign: 'center',
-            fontSize: '3rem',
-          }}
-        >
-          {config.title}
-        </h1>
+        <div className='card-title2'>{config.title}</div>
         <div style={{ maxWidth: 300, textAlign: 'cente' }}>{View}</div>
       </div>
     </div>

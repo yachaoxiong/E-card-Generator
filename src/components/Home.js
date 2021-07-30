@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import { useHistory } from 'react-router-dom';
 import LOGO from '../images/logo.png';
 import {
@@ -110,7 +111,7 @@ const Home = () => {
       <a
         rel='noreferrer'
         target='_blank'
-        href='https://ericxiong.herokuapp.com/'
+        href='https://yachao.vercel.app'
         style={{
           left: '45%',
           bottom: '20px',
@@ -122,6 +123,22 @@ const Home = () => {
         }}
       >
         Developed By Yachao
+      </a>
+      <a
+        rel='noreferrer'
+        target='_blank'
+        href='https://github.com/yachaoxiong'
+        style={{
+          left: '43.5%',
+          bottom: '15px',
+          position: 'absolute',
+          fontSize: '20px',
+          textDecoration: 'none',
+          fontWeight: 'bold',
+          color: '#476072',
+        }}
+      >
+      < GitHubIcon/>
       </a>
     </div>
   );

@@ -110,8 +110,6 @@ const Home = () => {
       </div>
       <a
         rel='noreferrer'
-        target='_blank'
-        href='https://yachao.vercel.app'
         style={{
           left: '45%',
           bottom: '20px',
@@ -122,14 +120,12 @@ const Home = () => {
           color: '#476072',
         }}
       >
-        Developed By Yachao
+        Developed By Eric
       </a>
       <a
         rel='noreferrer'
-        target='_blank'
-        href='https://github.com/yachaoxiong'
         style={{
-          left: '43.5%',
+          left: '42.5%',
           bottom: '15px',
           position: 'absolute',
           fontSize: '20px',
